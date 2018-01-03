@@ -120,7 +120,7 @@ def get_QR(self, uuid=None, enableCmdQR=False, picDir=None, qrCallback=None):
         else:
             with open(picDir, 'wb') as f:
                 f.write(qrStorage.getvalue())
-            utils.print_qr(picDir)
+            # utils.print_qr(picDir)
     return qrStorage
 
 def check_login(self, uuid=None):
